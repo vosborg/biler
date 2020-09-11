@@ -1,0 +1,102 @@
+body{
+    background-image: linear-gradient(to right, #334d50, #0F2027 );
+    background-color:#686868;
+    color: #D3D3D3;
+    text-shadow:1px 1px black;
+}
+
+.header{
+    background-image: url(img/jaguar-etype.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    font-family: $font1;
+}
+nav{
+    font-family: $font2;
+}
+
+@media (min-width: 768px) {
+    .header{
+        height: 550px;
+       
+
+    }
+}
+@media (max-width: 768px) {
+    .header{
+        height: 300px;
+       
+    }
+}
+.card{
+    background-image: $card-colour;
+    h5{
+        font-family: $font2; 
+    }
+    p{
+        font-family: $font2;
+    }
+}
+
+.toptext{
+    font-family: $font1;
+}
+
+.jumbo1{
+   @include tickets;
+    .btn{
+        background-color:darken(seagreen, 10%);
+        &:hover{
+            background-color:  seagreen;
+        }
+    }
+}
+.jumbo2{
+    @include tickets;
+        .btn{
+            background-color:darken(silver,10%);
+            &:hover{
+                background-color:darken(silver,20%);
+            }
+        }
+
+}
+.latest-news{
+    margin-top: 20px;
+}
+.latest-news > h3 {
+    color: #D3D3D3;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $font2;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.latest-news-all {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.latest-news-left {
+    display: inline-block;
+    padding-right: 20px;
+}
+.latest-news-right > p {
+    color: #D3D3D3;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+.news span.news-left {
+    padding-right: 18px;
+}
+.news span {
+    color: #D3D3D3;
+    font-size: 18px;
+    font-family: $font2;
+    font-weight: 600;
+}
